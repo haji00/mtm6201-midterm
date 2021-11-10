@@ -208,7 +208,7 @@ ul.nav-menu li a {
 
 .main-wrapper {
     background: #cdc6f9;
-    height: 100vh;
+    height: 100%;
 }
 
 header {
@@ -232,7 +232,7 @@ ul.nav-menu :active {
     flex-wrap: wrap;
 }
 
-/* I had to exclude the cone from the container to make the scoops work */
+/* I had to exclude the cone from the container */
 .category-container img:not(.cone) {
     width: 90px;
 }
@@ -381,6 +381,58 @@ td {
     padding: 20px 10px 20px 10px;
 }
 
+.wrapper_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;
+    overflow: hidden;
+    width: 100%;
+    grid-auto-rows: 100px;
+}
+
+
+.order-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr, 2);
+    padding: 0.5rem;
+    grid-gap: 1em;
+    display: inline-grid;
+}
+
+.order-box>div {
+    background: #917cc7;
+    border: gray 1px solid;
+}
+
+.order-box h4 {
+    margin: 0.5em;
+}
+
+.order-box p {
+    margin: 0.5em;
+}
+
+.order-box_images {
+    width: 100%;
+    height: 215px;
+}
+
+.btn {
+    box-sizing: border-box;
+    width: max-content;
+    display: inline-block;
+    padding: 2%;
+    background-color: #cdc6f9;
+    align-items: center;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 2px 2px;
+}
+
 /* ...................Mobile Styles................... */
 /* ---------------------------------
 Media Query Below 760px 
@@ -450,7 +502,7 @@ Media Query 760px and above
         margin: 5% 0 1% 0;
     }
 
-/* ...................Menu Page................... */
+    /* ...................Menu Page................... */
     .text-block {
         width: 30%;
         position: absolute;
